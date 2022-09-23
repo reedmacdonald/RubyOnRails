@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Bayern players</h1>
+
+<div id="bayern_players">
+  <% @bayern_players.each do |bayern_player| %>
+    <%= render bayern_player %>
+    <p>
+      <%= link_to "Show this bayern player", bayern_player %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New bayern player", new_bayern_player_path %>

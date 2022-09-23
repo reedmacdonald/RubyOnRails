@@ -1,0 +1,2 @@
+class BayernPlayer < ApplicationRecord
+end
