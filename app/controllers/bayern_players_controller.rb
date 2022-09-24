@@ -65,6 +65,6 @@ class BayernPlayersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def bayern_player_params
-      params.require(:bayern_player).permit(:first_name, :last_name, :email, :phone, :twitter)
+      params.require(:bayern_player).permit(:first_name, :last_name)
     end
 end
